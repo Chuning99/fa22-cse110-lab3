@@ -1,0 +1,212 @@
+/*CSE 110 First meeting*/
+@font-face {
+    font-family: myFont;
+    src: url(Ubuntu-Bold.ttf);
+}
+
+body {
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: rgb(99, 217, 238);
+    }
+
+}
+
+h1 {
+    font-family: myFont;
+    color: rgb(255, 99, 71);
+}
+
+h2 {
+    font-family: myFont;
+    color: #FFF;
+    margin: 0.1inch 0.1mm 0.1lh 0.1cm;
+    padding: .10em .10em .10em .10em;
+}
+
+h3,
+h4 {
+    font-family: myFont;
+    color: hsl(120, 100%, 25%)
+}
+
+.myDiv {
+    position: static;
+    border-width: 3px;
+    border-style: outset;
+    border-color: red;
+    border-radius: 1px;
+    background-color: skyblue;
+
+    text-align: left;
+    width: 320px;
+    height: 100px;
+    max-width: 500px;
+    max-height: 500px;
+
+    padding-top: .10em;
+    padding-bottom: .10em;
+    padding-left: .10em;
+    padding-right: .10em;
+
+    margin-top: 0.1in;
+    margin-bottom: 0.1mm;
+    margin-right: 0.1pc;
+    margin-left: 0.1ex;
+
+}
+
+p {
+    text-decoration: none;
+
+}
+
+span {
+    display: block;
+
+}
+
+a {
+    display: inline;
+
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: pink;
+}
+
+.Newbox {
+    position: relative;
+    border-width: 3px;
+    border-style: outset;
+    border-color: white;
+    border-radius: 1px;
+    background-color: skyblue;
+
+    width: 200px;
+    height: 250px;
+
+
+}
+
+/*file box*/
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.child-itema {
+    width: 80px;
+    height: 50px;
+
+}
+
+.child-itemb {
+    width: 81px;
+    height: 50px;
+
+}
+
+.child-itemc {
+    width: 82px;
+    height: 50px;
+
+}
+
+.child-itemd {
+    width: 83px;
+    height: 50px;
+
+}
+
+.navigation a:hover {
+    background: #1565C0;
+}
+
+
+/*grid container*/
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.gridContainer>div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.itema {
+    grid-template-columns: 61px;
+    grid-template-rows: 91px;
+    /* background-color: #1565C0; */
+}
+
+.itemb {
+    grid-template-columns: 60px;
+    grid-template-rows: 90px;
+    /* background-color: #1565C0; */
+}
+
+.itemc {
+    grid-template-columns: 63px;
+    grid-template-rows: 93px;
+    /* background-color: #1565C0; */
+}
+
+
+/*CSS selector */
+#fname {
+    color: black;
+}
+
+* {
+    background-color: skyblue;
+}
+
+input[type=text] {
+    width: 100px;
+}
+
+div h5 {
+    font-family: myFont;
+}
+
+div+p {
+    font-family: myFont;
+    font-size: medium;
+
+}
+
+p~span {
+    font-family: myFont;
+    font-size: large;
+
+}
+
+.myDiv em {
+    font-family: myFont;
+}
+
+.Newbox i {
+    font-family: myFont;
+}
